@@ -1,0 +1,1103 @@
+body {
+	direction:rtl;
+	unicode-bidi:embed;
+}
+
+.process-list i {
+	float: right;
+	margin: 0 0 0 20px;
+}
+
+.process-slider-wrap {
+	padding: 0 0 0 30px;
+}
+
+.process-list .content {
+	margin: 0 60px 0 0;
+}
+
+.post-content {
+	text-align: right;
+}
+
+.post-date {
+	float: right;
+	margin-right: 0;
+	margin-left: 25px;
+}
+
+.bullet_list i, .list i {
+	color: #444;
+	padding-right: 0;
+	padding-left: 8px;
+}
+
+.bullet_list i {
+	margin: 3px 0 0 -21px;
+	margin: 3px -21px 0 0;
+}
+
+.bullet_list {
+	margin-left: 0;
+	margin-right: 5px;
+}
+
+ul, ol, ul.square, ul.circle, ul.disc {
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.project-wrapper {
+	text-align: right;
+}
+
+.project-details .bullet_list ul {
+	margin-left: 0;
+	margin-right: 15px;
+}
+
+.blog-title, .blog-content {
+	margin-left: 0;
+	margin-right: 70px;
+}
+
+.search-box {
+	padding-right: 0;
+	padding-left: 55px;
+}
+
+.search-button {
+	left: 0;
+}
+
+.vc_col-sm-1, .vc_col-sm-2, .vc_col-sm-3, .vc_col-sm-4, .vc_col-sm-5, .vc_col-sm-6, .vc_col-sm-7, .vc_col-sm-8, .vc_col-sm-9, .vc_col-sm-10, .vc_col-sm-11, .vc_col-sm-12 {
+	float: right;
+}
+
+.widget_recent_comments li:before,
+.widget_pages li:before,
+.widget_rss li:before,
+.widget_meta li:before,
+.widget_nav_menu li:before,
+.widget_archive li:before,
+.widget_recent_entries li:before,
+.widget_categories li:before {
+	content: '';
+	padding: 0;
+}
+
+.widget_recent_comments li:after,
+.widget_pages li:after,
+.widget_rss li:after,
+.widget_meta li:after,
+.widget_nav_menu li:after,
+.widget_archive li:after,
+.widget_recent_entries li:after,
+.widget_categories li:after {
+	color: #ccc;
+	content: '\f104';
+	font-family: 'FontAwesome';
+	padding-left: 7px;
+}
+
+.gm-style .gm-style-iw>div {
+	float: left;
+}
+
+.zorbix_tabs.wpb_tabs .wpb_tabs_nav li, .tabs .trigger {
+	float: right;
+}
+
+.wpb_tour .wpb_tabs_nav {
+	float: right;
+}
+
+.wpb_tour .wpb_tour_tabs_wrapper .wpb_tab {
+	float: right;
+	padding: 0 21.73913043px 0 0;
+}
+
+.wpb_tour_next_prev_nav {
+	margin-left: 0;
+	margin-right: 31.66666667%;
+	padding-left: 0;
+	padding-right: 21.73913043px;
+	font-size: 80%;
+}
+
+.wpb_tour_next_prev_nav span.wpb_next_slide {
+	text-align: left;
+	float: right;
+}
+
+.wpb_tour_next_prev_nav span {
+	float: right;
+}
+
+.wpb_tour_next_prev_nav span.wpb_next_slide {
+	text-align: right;
+	float: left;
+}
+
+.one-half,
+.one-third,
+.two-thirds,
+.three-fourths,
+.one-fourth,
+.two-fourths,
+.one-fifth,
+.two-fifths,
+.three-fifths,
+.four-fifths,
+.one-sixth,
+.five_sixths {
+	margin: 0 0 0 3.5%;
+}
+
+.one-half:last-child,
+.one-third:last-child,
+.two-thirds:last-child,
+.three-fourths:last-child,
+.one-fourth:last-child,
+.two-fourths:last-child,
+.one-fifth:last-child,
+.two-fifths:last-child,
+.three-fifths:last-child,
+.four-fifths:last-child,
+.one-sixth:last-child,
+.one-half:last-child,
+.one-third:last-child,
+.two-thirds:last-child,
+.three-fourths:last-child,
+.one-fourth:last-child,
+.two-fourths:last-child,
+.one-fifth:last-child,
+.two-fifths:last-child,
+.three-fifths:last-child,
+.four-fifths:last-child,
+.one-sixth:last-child,
+.five_sixth:last-child,
+/* using a class for old ie support */
+.one-half.last,
+.one-third.last,
+.two-thirds.last,
+.three-fourths.last,
+.one-fourth.last,
+.two-fourths.last,
+.one-fifth.last,
+.two-fifths.last,
+.three-fifths.last,
+.four-fifths.last,
+.one-sixth.last,
+.one-half.last,
+.one-third.last,
+.two-thirds.last,
+.three-fourths.last,
+.one-fourth.last,
+.two-fourths.last,
+.one-fifth.last,
+.two-fifths.last,
+.three-fifths.last,
+.four-fifths.last,
+.one-sixth.last,
+.five_sixth.last { margin: 0 0 0 0; }
+
+/*
+
+Main Theme Stylesheet
+
+TABLE OF CONTENTS
+-----------------
+
+- Preloader / .preloader
+- Animated Elements / .animated
+- Page Wrap / .wrap
+- Titles
+    Section title / .section-title
+    Widget Title, Sub-title / .widget-title, .sub-title
+    Big Title / .big-title
+    Description / .description
+- Sections
+    Main Sections / .sect-1, .sect-2, .sect-3, .sect-4
+    Image Section / .image-section
+    Tinted Section / .tinted_row
+- Intro Section / .intro_text
+- Callout / .callout
+- Lightboxes / .lightbox
+- Feature Circles / .feature
+- Features V2 w's / .feature_v2
+- Testimonials / .testimonials
+- Clients / .clients
+- Feature Hex's / .feature-hex
+- Portfolio / .portfolio-wrapper
+- Portfolio Slider / .portfolio-slider-wrapper
+- Filter Menu (portfolio menu) / .filter-menu
+- Page Slider / .slider-wrapper
+    Slider Tint / .banner_tint
+    Video Background / .video-background
+    Down Button / .down
+    Main Slider Captions  / .welcome
+    Rev Slider Captions / .caption-title2
+- Main Header / .header
+- Navigation / .main_menu
+- Recent Posts / .latest-posts
+- Team / .team
+- Social Icons / .social-icons
+- Footer / .footer
+- Contact / .contact-form
+- Skills / .skill
+- pricing Tables / .pricing-tables
+- Our Process / .process-slider
+- Map / .map-wrapper
+- Override BXSlider Styling / .bxslider-wrapper
+- Blog / .blog
+    Sticky Post / .sticky-icon
+    Quote Post Type / .blockquote.post-quote
+    Link Post Type / .link-title, blog-link
+    Comments List / .comment-list
+    Comment Form / .comment-form
+    Widgets / .widget-container
+        Widget Calander / .widget_calander
+        Widget Tags / .tagcloud
+- Pagination / .pagination
+- Triggers: toggle, accordion, zbxtabs / .accordion, .toggle
+    Tabs / .zbxtabs
+    Sidetabs / .zbxtabs-wrap
+- Alert Boxes / .alert
+- Progress Bar / .progress-bars
+- DropCaps / .dropcap
+- Tables / .table-standard
+- Highlights / .highlight-color
+- Milestones / .milestone
+- Infobox / .info-box
+- Projects
+    Project Viewer / .project-viewer
+    Project Details - .project-details
+- 404 / .not-found
+- Gallery - WP Post Gallery Styling / .gallery-column-1
+- WP images / .alignleft, alignright etc
+- WP Image Captions / .wp-caption
+- Search form / .search-form
+- Default Colors
+- Mediaelement Video Styling and Responsiveness
+*/
+/* ===================================================== */
+/* Preloader
+*/
+/* Spin animation */
+
+/* White Background for preloader */
+
+/* Spinning icon */
+.preloader i {
+	right: 50%;
+	left: auto;
+}
+
+/* ===================================================== */
+/* Animated Elements
+*/
+/* Hides all animated elements */
+
+/* SVG hexes cannot be hidden */
+
+/* turns it off for ie8 */
+
+/* ===================================================== */
+/* Page Wrap
+*/
+
+/* ===================================================== */
+/* Titles
+*/
+
+/* Section Title Underline */
+
+/* Text Under Section Titles */
+
+/* ===================================================== */
+/* Sections                                              */
+/* ===================================================== */
+
+/* Overrides margin bottom on visual composer rows used for sections */
+
+/* Light Background Section */
+
+/* Slim Section*/
+
+/* Dark Background section */
+
+/* Sections with a Background image */
+
+/* White Fonts for image sections */
+
+/* Addes a tint for a section */
+
+/* ===================================================== */
+/* Intro Text - Text Section Under Slider
+/* ===================================================== */
+
+.intro_text {
+	margin: 15px 40px 80px 0;
+}
+
+.intro_text i {
+	margin: -40px -70px 0 0;
+}
+
+/* ===================================================== */
+/* Callout - Section before Hexes
+*/
+
+/* Side dashes on button */
+
+/* Remove dashes for an image background */
+
+/* ===================================================== */
+/* Lightbox                                              */
+/* ===================================================== */
+
+/* Change close button */
+
+/* ===================================================== */
+/* Features - cirlces                                    */
+/* ===================================================== */
+
+/* ===================================================== */
+/* Features V2 - W's                                     */
+/* ===================================================== */
+
+.feature_v2 svg {
+	right: 50%;
+	margin-right: -80px;
+	left: auto;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* Testimonials                                          */
+/* ===================================================== */
+
+/* Quote Dark */
+
+/* ===================================================== */
+/* Clients                                               */
+/* ===================================================== */
+
+/* ===================================================== */
+/* Feature Images Hex's                                  */
+/* ===================================================== */
+
+/* Higher middle hex */
+
+.feature-hex .svg-graphic {
+	margin-right: 1px;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* Portfolio                                             */
+/* ===================================================== */
+
+/* Thumbnail */
+
+/* Information under Thumbnail */
+
+.port-info i {
+	right: 50%;
+	margin-right: -25px;
+	left: auto;
+	margin-left: auto;
+}
+
+.port-info i:after {
+	right: 0;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	left: auto;
+}
+
+/* PORTFOLIO ITEM BUTTON OVERLAY */
+
+/* Button For Lightbox or prohect viewer */
+.lightbox-btn,
+.project-btn {
+	right: 0;
+	left: auto;
+}
+
+/* ===================================================== */
+/* PORTFOLIO SLIDER
+*/
+
+/* ===================================================== */
+/* Filter Menu - Portfolio menu
+*/
+
+/* ===================================================== */
+/* Page Slider                                           */
+/* ===================================================== */
+/* Full height slider & background image styling for all sliders */
+
+/* Override height on rev slider */
+
+/* Override margins on bxslider */
+
+/* General wrapper for all sliders */
+
+/* Slider Tint*/
+.banner_tint {
+	right: 0;
+	left: auto;
+}
+
+/* Video Background */
+.video-background {
+	left: 0;
+	right: auto;
+}
+
+/* ===================================================== */
+/* Down Button
+/* ===================================================== */
+
+.down {
+	right: 50%;
+	margin-right: -100px;
+	left: auto;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* Main Slider Captions
+*/
+
+/* ===================================================== */
+/* Rev Slider Captions
+*/
+
+/* ===================================================== */
+/* Main Header
+*/
+
+.logo {
+	float: right;
+}
+
+/*================================================= */
+/* Navigation
+/*================================================== */
+
+.main_menu {
+	float: left;
+}
+
+/* All links */
+
+/* Menu Buttons */
+
+/* Main buttons link */
+
+/* Main buttons Hover and current */
+
+/* All Dropdowns */
+.main_menu ul {
+	right: 0;
+	text-align: right;
+	left: auto;
+}
+
+/* All Dropdown links */
+
+/* Menu Hovers */
+/* Drop Down hover */
+
+/* 3rd DropDown */
+.main_menu ul ul {
+	right: 100%;
+	left: auto;
+}
+
+.selectnav {
+	float: left;
+}
+
+/* ===================================================== */
+/* Recent Posts                                          */
+/* ===================================================== */
+
+/* No margin right on link posts in latest posts */
+.latest-posts .link-title,
+.latest-posts .blog-link {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* Blockquotes styled for latest posts*/
+
+.post-date {
+	float: right;
+	margin-left: 25px;
+	margin-right: auto;
+}
+
+/* Horizontal line under post-date */
+.post-date:before {
+	right: 50%;
+	left: auto;
+}
+
+/* Dot Under line */
+.post-date:after {
+	margin-right: -5px;
+	right: 50%;
+	left: auto;
+	margin-left: auto;
+}
+
+.post-content {
+	text-align: right;
+}
+
+/* Dark Sections */
+
+/* ===================================================== */
+/* Team
+*/
+
+.team>li.last-push {
+	margin-left: 30px;
+	margin-right: auto;
+}
+
+/* Team Member Icon */
+.team .img-wrap i {
+	right: 50%;
+	margin-right: -25px;
+	left: auto;
+	margin-left: auto;
+}
+
+/* Icon Triangle */
+.team .img-wrap i:after {
+	right: 0;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	left: auto;
+}
+
+/* ===================================================== */
+/* Social Icons
+*/
+
+/* ===================================================== */
+/* Footer                                                */
+/* ===================================================== */
+
+/* ===================================================== */
+/* Contact                                               */
+/* ===================================================== */
+/* styling */
+
+/* Form errors */
+
+/* Dark Background styling */
+
+/* ===================================================== */
+/* Skills                                                */
+/* ===================================================== */
+
+.skill-semi {
+	right: 50%;
+	margin-right: -50px;
+	left: auto;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* Pricing Tables                                        */
+/* ===================================================== */
+
+.price-content ul {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* Our Process                                           */
+/* ===================================================== */
+
+.process-slider-wrap {
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+.process-list {
+	padding-right: 30px;
+	padding-left: 0;
+}
+
+/* Icon */
+.process-list i {
+	float: right;
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+/* Icon Dark */
+
+/* Icon Current */
+
+/* Current Title */
+
+/* Current Title Dark */
+
+/* Current paragraph */
+
+/* Current paragraph Dark BG*/
+
+.process-list .content {
+	margin-right: 60px;
+	margin-left: auto;
+}
+
+/* Dark BG title */
+
+/* Underline */
+
+/* ===================================================== */
+/* Map                                                   */
+/* ===================================================== */
+
+/* Map Icon */
+.map-button i {
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+/* Hides the map window */
+
+/* Settings a max width on the map box makes the close button disapear */
+
+/* ===================================================== */
+/* Override BXSlider Styling
+/* ===================================================== */
+
+.bx-wrapper .bx-viewport {
+	right: 0;
+	left: auto;
+}
+
+/* ===================================================== */
+/* Blog
+*/
+/* Gray background on blog pages*/
+
+.blog-single .page-links {
+	margin-right: 70px;
+	margin-left: auto;
+}
+
+.blog-title,
+.blog-content {
+	margin-right: 70px;
+	margin-left: auto;
+}
+
+/* Post date shape */
+
+.blog-date:after {
+	right: 0;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	left: auto;
+}
+
+/* ===================================================== */
+/* Sticky Post
+/* ===================================================== */
+
+.tag-sticky-2 .blog-title,
+.tag-sticky-2 .blog-content,
+.sticky .blog-title,
+.sticky .blog-content {
+	margin-right: 70px;
+	margin-left: auto;
+}
+
+.sticky-icon:after {
+	right: 0;
+	border-right: 25px solid transparent;
+	border-left: 25px solid transparent;
+	left: auto;
+}
+
+/* ===================================================== */
+/* Quote Post Type
+/* ===================================================== */
+
+blockquote.post-quote {
+	margin-right: 50px;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* Link Post Type
+/* ===================================================== */
+
+.blog-link {
+	margin-right: 70px;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* Comment List
+*/
+
+.comment-list {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* Avatar */
+.comment-avatar img {
+	margin: 0 0 0 20px;
+	float: right;
+}
+
+.bypostauthor .comment-author {
+	float: right;
+}
+
+.comment-meta {
+	float: left;
+}
+
+/* Keep underneath meta and author */
+
+/* ===================================================== */
+/* Comment Form
+*/
+
+/* To make the h3 look like a h4 with .sub-title as comment_form has no option to change it. */
+
+/* ===================================================== */
+/* Widgets
+*/
+
+/* CATEGORIES */
+.widget_recent_comments ul,
+.widget_rss ul,
+.widget_meta ul,
+.widget_nav_menu ul,
+.widget_archive ul,
+.widget_recent_entries ul,
+.widget_categories ul {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* Bullets */
+.widget_recent_comments li:before,
+.widget_pages li:before,
+.widget_rss li:before,
+.widget_meta li:before,
+.widget_nav_menu li:before,
+.widget_archive li:before,
+.widget_recent_entries li:before,
+.widget_categories li:before {
+	padding-left: 7px;
+	padding-right: 0;
+}
+
+/* ===================================================== */
+/* Widget Calander
+/* ===================================================== */
+
+/* calendar widget container */
+.widget_calendar {
+	float: right;
+}
+
+/* Table */
+
+/* Month and year */
+#wp-calendar caption {
+	text-align: left;
+}
+
+#wp-calendar tfoot #next {
+	text-align: left;
+}
+
+/* ===================================================== */
+/* Widget Tags
+/* ===================================================== */
+
+.tagcloud a {
+	margin: 0 0 10px 5px;
+}
+
+/* ===================================================== */
+/* Pagination
+/* ===================================================== */
+
+.pagination,
+.pagination ul {
+	float: left;
+}
+
+.pagination li {
+	float: right;
+	margin: 0 0 5px 5px;
+}
+
+.pagination .prev,
+.pagination .next {
+	float: right;
+}
+
+/* Hovers */
+
+/* ===================================================== */
+/* Triggers: toggle, accordion, zbxtabs
+*/
+
+/*.wpb_accordion .wpb_accordion_wrapper .zorbix_accordian .wpb_accordion_header,*/
+
+/* Tab styling */
+.wpb_accordion .zorbix_accordian .wpb_accordion_header a,
+.zorbix_tabs.wpb_tour .wpb_tour_tabs_wrapper .wpb_tabs_nav a,
+.zorbix_tabs.wpb_tabs .wpb_tabs_nav a,
+.trigger a {
+	text-align: right;
+}
+
+.wpb_accordion_header i,
+.wpb_tabs_nav i,
+.trigger i {
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+/* Default */
+
+/* Vertical zbxtabs: Add  spacing under tags */
+
+/* HOVER AND CURRENT */
+
+/* Remove blue outline on Accordian */
+
+.trigger span {
+	left: 16px;
+	right: auto;
+}
+
+/* ===================================================== */
+/* Tabs
+*/
+
+.zorbix_tabs.wpb_tabs .wpb_tabs_nav li,
+.tabs .trigger {
+	float: right;
+	margin: 0 0 0 -1px;
+}
+
+/* ===================================================== */
+/* Sidetabs
+/* ===================================================== */
+
+.tabs-wrap {
+	float: right;
+	padding: 0 0 0 20px;
+}
+
+/* ===================================================== */
+/* Alert Boxs
+/* ===================================================== */
+
+.alert {
+	padding: 10px 20px 10px 35px;
+}
+
+/* Close button */
+.alert .alert-button {
+	left: 0;
+	right: auto;
+}
+
+/* ===================================================== */
+/* Progress Bar
+*/
+
+/* ===================================================== */
+/* DropCaps
+/* ===================================================== */
+
+.dropcap {
+	float: right;
+	margin: 0 0 0 5px;
+}
+
+/* ===================================================== */
+/* Tables
+*/
+
+/* ===================================================== */
+/* Highlights
+*/
+
+/* ===================================================== */
+/*  Milestones
+*/
+
+/* Icon */
+
+/* Number */
+
+/* Milestones on a dark background */
+
+/* ===================================================== */
+/* Infobox
+*/
+
+.info-box[class^="icon-"] {
+	padding-right: 80px;
+	padding-left: 0;
+}
+
+.info-box:before {
+	right: 0;
+	left: auto;
+}
+
+/*================================================= */
+/* Project Viewer
+*/
+
+.project-wrapper {
+	text-align: right;
+}
+
+/*================================================= */
+/* Project Details
+*/
+
+/* Push down button with side info layout */
+
+/* Space under text section */
+
+.project-details .bullet_list ul {
+	margin-right: 15px;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* 404
+*/
+
+/* ===================================================== */
+/* Gallery - WP Post Gallery Styling
+*/
+
+.gallery-item {
+	float: right;
+}
+
+.gallery-caption {
+	margin-right: 0;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* WP images
+/* ===================================================== */
+
+.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+	float:left;
+	margin: 5px 20px 20px 0;
+}
+
+.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignleft {
+	float: left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignright {
+	float: right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ===================================================== */
+/* WP Image Captions
+*/
+
+.wp-caption.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+/* Jetpack video */
+
+/* ===================================================== */
+/* Search form
+*/
+
+.search-box {
+	padding-left: 55px;
+	padding-right: 0;
+}
+
+.search-button {
+	left: 0;
+	right: auto;
+}
+
+/* ===================================================== */
+/* Default Colors
+*/
+/* BACKGROUND AND BORDER COLOR */
+
+/* COLOR */
+
+/* BACKGROUND */
+
+/* BORDER COLOR */
+
+/* ===================================================== */
+/* Mediaelement Video Styling and Responsiveness
+*/
+/* Override styling of revolusion spinner */
+
+.video_controls a {
+	padding-left: 15px;
+	padding-right: 0;
+}
+
+
+/* Made by the RTL-er.com - http://www.rtl-er.com */

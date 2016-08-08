@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="385" height="180" viewBox="0, 0, 385, 180">
+  <g id="Layer 1">
+    <text transform="matrix(1, 0, 0, 1, 192.5, 183.589)">
+      <tspan x="-183.04" y="-27.857" font-family="HelveticaNeue-Medium" font-size="80" fill="#C7C7C7">HORIZON</tspan>
+    </text>
+    <path d="M231.205,-0 L231.205,44.618 L231.205,44.618 L192.5,65.731 L153.795,44.618 L153.795,-0 z M185.712,10.868 L174.999,33.75 L212.132,33.75 L203.826,20.165 L197.186,26.783 z" fill="#C7C7C7"/>
+  </g>
+  <defs/>
+</svg>

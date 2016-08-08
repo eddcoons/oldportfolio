@@ -1,0 +1,141 @@
+/* ===================================================== */
+/* Editor shortcode styling
+/* ===================================================== */
+.dropcap {
+  color: #4d4d4d;
+  float: left;
+  font-size: 40px;
+  line-height: 30px;
+  margin: 0 5px 0 0; }
+
+.dropcap.color {
+  color: #7fbbc5; }
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px; }
+
+h1.section-title:after,
+.description:after {
+  border-bottom: 3px solid #7fbbc5;
+  content: "";
+  display: block;
+  margin: 30px auto;
+  width: 80px; }
+
+.sub-title {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  text-transform: uppercase; }
+
+.heading {
+  font-size: 50px; }
+
+.heading,
+.section-title, .alt-font, p.alt-text,
+.alt-text {
+  font-family: 'Crimson Text', serif; }
+
+p.alt-text,
+.alt-text {
+  color: #AAAAAA;
+  font-size: 20px;
+  line-height: 1.2; }
+
+p.alt-text.white,
+.alt-text.white {
+  color: white; }
+
+p.alt-text.dark,
+.alt-text.dark {
+  color: #444; }
+
+p.alt-text.medium,
+.alt-text.medium {
+  font-size: 26px;
+  line-height: 1.3; }
+
+p.alt-text.large,
+.alt-text.large {
+  font-size: 30px;
+  line-height: 1.4; }
+
+.alt-text2 {
+  font-weight: 300;
+  color: #ccc;
+  margin-bottom: 10px;
+  text-transform: uppercase; }
+
+.alt-text2.medium {
+  font-size: 20px; }
+
+.alt-text2.big {
+  font-size: 24px; }
+
+.alt-text2.large {
+  font-size: 28px; }
+
+.txt-xs {
+  font-size: 10px; }
+
+.txt-sm {
+  font-size: 12px; }
+
+.txt-md {
+  font-size: 18px;
+  line-height: 1.5; }
+
+.txt-bg {
+  font-size: 22px;
+  line-height: 1.4; }
+
+.txt-lg {
+  font-size: 30px;
+  line-height: 1.4; }
+
+.txt-lg.alt-font {
+  line-height: .9; }
+
+.txt-xl {
+  font-size: 100px;
+  line-height: 1; }
+
+.txt-xl.alt-font {
+  line-height: .9; }
+
+.txt-xxl {
+  font-size: 170px;
+  line-height: 1; }
+
+.txt-xxl.alt-font {
+  line-height: .9; }
+
+.line:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #444;
+  width: 50px;
+  margin: 0 auto 30px;
+  padding-top: 30px; }
+
+.white-text {
+  color: white; }
+
+.white-text h1, .white-text h2, .white-text h3, .white-text h4, .white-text h5, .white-text h6, .white-text p, .white-text li, .white-text i {
+  color: inherit; }
+
+.white-text .dash:after {
+  border-color: #fff; }
+
+.white-text .alt-text {
+  color: #fff; }
+
+.dash:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #444;
+  width: 50px;
+  padding-top: 0;
+  margin-bottom: 30px; }

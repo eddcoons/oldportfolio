@@ -1,0 +1,197 @@
+.support-page table {
+  background: #fff;
+  border: 1px solid #EEEEEE;
+  width: 100%;
+  text-align: left; }
+
+.support-page table th, .support-page table td {
+  border: 1px solid #EEEEEE;
+  padding: 10px; }
+
+.support-page table th {
+  background: #f2f2f2; }
+
+.support-page table .active {
+  background: #BDFFBD; }
+
+.support-page .support-page textarea {
+  width: 100%;
+  height: 500px; }
+
+.support-page textarea {
+  width: 100%;
+  height: 300px; }
+
+.support-page ul {
+  list-style: circle;
+  padding-left: 20px;
+  margin-bottom: 30px; }
+
+.support-page h2 {
+  margin-top: 30px; }
+
+.section-description {
+  color: #909090;
+  text-align: center;
+  font-size: 23px;
+  margin: 0; }
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 15px 0 0 0; }
+
+.sub-title {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.3; }
+
+/* ===================================================== */
+/* Other
+/* ===================================================== */
+.alert {
+  background: #f2f2f2;
+  border: 1px solid gray;
+  margin: 0 0 20px 0;
+  padding: 10px 35px 10px 20px;
+  position: relative; }
+
+.alert strong {
+  font-weight: 600; }
+
+.alert.success {
+  background: #B8F2BC;
+  border-color: #90CD90;
+  color: #3F963E; }
+
+.zx_ajax_message {
+  display: none; }
+
+.binded_message_input {
+  display: none !important; }
+
+/* ===================================================== */
+/* Vafpress override
+/* ===================================================== */
+/* Logo styling */
+.vp-wrap .vp-logo {
+  padding-top: 0; }
+
+.vp-wrap .vp-logo {
+  width: 200px; }
+
+.vp-metabox .vp-field .label {
+  width: 30%; }
+
+.vp-metabox .vp-field .label .description p {
+  font-size: 12px; }
+
+/* To go overtop of the VC box */
+/*.select2-drop {
+   z-index: 200008;
+}
+*/
+/* Fix VP Shortcodes overlay box for ie */
+.reveal-modal {
+  top: 100px !important;
+  /*bottom: auto;*/ }
+
+/* zorbix_index of vp shortcode menu blank overlay not high enogh on ie */
+.reveal-modal-bg {
+  z-index: 10010; }
+
+.fontawesome i {
+  margin-right: 10px; }
+
+.column-zorbix_category {
+  width: 250px; }
+
+.column-zorbix_thumbnail {
+  text-align: center;
+  width: 200px; }
+
+.column-zorbix_thumbnail img {
+  background: gray;
+  height: auto;
+  width: 100%; }
+
+/* Featured image */
+#postimagediv .inside img {
+  background-color: gray; }
+
+/* Column a little small for titles so made bigger */
+.column-posts.desc {
+  width: 130px; }
+
+/* DEFAULT BUTTON */
+.example-button {
+  border: none;
+  background: #777;
+  display: inline-block;
+  padding: 8px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: inherit;
+  line-height: normal;
+  margin: 0 20px 20px 0;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-appearance: none;
+  text-transform: uppercase;
+  text-align: left; }
+
+/* ---------------------------------- */
+/* --  Range Slider
+/* ---------------------------------- */
+.wpb_edit_form_elements .zx_vc_range .zx_range_slider {
+  margin-right: 50px;
+  width: 200px; }
+
+.wpb_edit_form_elements .zx_vc_range .zx_range_value {
+  width: 100px; }
+
+.wpb_edit_form_elements .wpb_el_type_zorbix_note {
+  background: #E2FDFF;
+  border: 1px solid #5C7779 !important;
+  margin: 10px 20px;
+  padding: 10px;
+  width: auto;
+  height: auto; }
+
+.wpb_el_type_zorbix_note .wpb_element_label {
+  color: #5C7779;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.zorbix_note_field {
+  display: none; }
+
+/* ---------------------------------- */
+/* --  Range Slider
+/* ---------------------------------- */
+.vp-wrap .vp-field.vp-zxeditor .label,
+.vp-wrap .vp-field.vp-zxeditor .field {
+  display: block;
+  width: 100%; }
+
+.vp-wrap .vp-field.vp-zxeditor .label {
+  padding-bottom: 0; }
+
+/* ===================================================== */
+/* Select2 with option tree
+/* ===================================================== */
+.ot-metabox-wrapper .select-wrapper span {
+  position: relative;
+  overflow: auto;
+  padding: 0;
+  border: none; }
+
+.ot-metabox-wrapper .select-wrapper > span:first-child {
+  display: none; }

@@ -1,0 +1,43 @@
+[
+    {
+        "name": "kevintweber/phpunit-markup-validators",
+        "version": "v2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/kevintweber/phpunit-markup-validators.git",
+            "reference": "bee48f48c7c1c9e811d1a4bedeca8f413d049cb3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/kevintweber/phpunit-markup-validators/zipball/bee48f48c7c1c9e811d1a4bedeca8f413d049cb3",
+            "reference": "bee48f48c7c1c9e811d1a4bedeca8f413d049cb3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">= 5.3.3"
+        },
+        "time": "2015-03-14 23:37:46",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "HTML, CSS, and feed validation for PHPUnit",
+        "homepage": "https://github.com/kevintweber/phpunit-markup-validators",
+        "keywords": [
+            "atom",
+            "css",
+            "html",
+            "phpunit",
+            "rss",
+            "validation"
+        ]
+    }
+]

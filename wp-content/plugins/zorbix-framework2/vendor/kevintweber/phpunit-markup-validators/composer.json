@@ -1,0 +1,17 @@
+{
+    "name": "kevintweber/phpunit-markup-validators",
+    "type": "library",
+    "description": "HTML, CSS, and feed validation for PHPUnit",
+    "keywords": ["html", "css", "atom", "rss", "validation", "phpunit"],
+    "homepage": "https://github.com/kevintweber/phpunit-markup-validators",
+    "license": "MIT",
+    "require": {
+        "php": ">= 5.3.3"
+    },
+    "autoload": {
+        "psr-4": { "": "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Test\\": "test/" }
+    }
+}

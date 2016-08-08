@@ -1,0 +1,22 @@
+{
+  "name": "Zorbix Framework",
+  "version": "0.0.0",
+  "authors": [
+    "Zackary Allnutt <zackary.allnutt@gmail.com>"
+  ],
+  "description": "Zorbix Framework",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "install": {
+    "path": "src-js",
+    "sources": {
+      "onoff": "bower_js_assets/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"
+    }
+  }

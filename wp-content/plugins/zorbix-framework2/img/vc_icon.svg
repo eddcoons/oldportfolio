@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="32" height="32" viewBox="0, 0, 32, 32">
+  <g id="Background">
+    <rect x="0" y="0" width="32" height="32" fill="#000000" fill-opacity="0"/>
+  </g>
+  <g id="Page-1">
+    <text transform="matrix(1, 0, 0, 1, 16, 16)">
+      <tspan x="-4.536" y="4.878" font-family="HelveticaNeue-Bold" font-size="14" fill="#565656">Z</tspan>
+    </text>
+    <path d="M28.119,22.747 L16,29.743 L3.881,22.747 L3.881,8.753 L16,1.757 L28.119,8.753 z" fill-opacity="0" stroke="#DDDDDD" stroke-width="0.5"/>
+  </g>
+</svg>

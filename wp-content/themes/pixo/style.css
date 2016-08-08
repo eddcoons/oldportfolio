@@ -1,0 +1,18 @@
+/*
+Theme Name: Pixo
+Theme URI: http://themeforest.net/user/Zorbix/portfolio
+Description: A beautiful and clean WordPress theme
+Author: Zorbix
+Author URI: http://themeforest.net/user/Zorbix/portfolio
+Version: 0.3.4.3
+License: Located in 'licensing' folder
+License URI: Located in 'licensing' folder
+Text Domain: pixo;
+Tags: responsive-layout, light, white, custom-colors, theme-options, one-column, two-columns, right-sidebar, left-sidebar, fluid-layout,  featured-images, post-formats, translation-ready
+*/
+
+/********************************************************************************************************************/
+/*  This stylesheet is NOT loaded by the theme. CSS placed in this file will not load unless you enqueue this file.
+/*  We highly recommend that you use the child theme included in your download ( if you downloaded "all files" )
+/*********************************************************************************************************************/
+
