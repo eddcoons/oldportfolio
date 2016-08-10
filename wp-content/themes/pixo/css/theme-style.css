@@ -7346,7 +7346,7 @@ table .active {
   line-height: 1;
   margin-bottom: 15px; }
 
-@media (max-width: 700px) {
+@media (max-width: 780px) {
     .selector-font {
         font-size: 50px;
     }
