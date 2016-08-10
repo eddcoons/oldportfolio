@@ -192,7 +192,7 @@ function wp_install_defaults( $user_id ) {
 
 	// Default comment
 	$first_comment_author = __('Mr WordPress');
-	$first_comment_url = 'https://eddcoons_portfolio.org/';
+	$first_comment_url = 'https://wordpress.org/';
 	$first_comment = __('Hi, this is a comment.
 To delete a comment, just log in and view the post&#039;s comments. There you will have the option to edit or delete them.');
 	if ( is_multisite() ) {
@@ -321,7 +321,7 @@ function wp_install_maybe_enable_pretty_permalinks() {
 		$test_url = get_permalink( 1 );
 
 		if ( ! $test_url ) {
-			$test_url = home_url( '/eddcoons_portfolio-check-for-rewrites/' );
+			$test_url = home_url( '/wordpress-check-for-rewrites/' );
 		}
 
 		/*
@@ -382,7 +382,7 @@ Log in here: %4\$s
 We hope you enjoy your new site. Thanks!
 
 --The WordPress Team
-https://eddcoons_portfolio.org/
+https://wordpress.org/
 "), $blog_url, $name, $password, $login_url );
 
 	@wp_mail($email, __('New WordPress Site'), $message);

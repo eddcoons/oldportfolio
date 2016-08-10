@@ -375,7 +375,7 @@ get_current_screen()->add_help_tab( array(
 		/* translators: 1: Plugin Browser/Installer URL, 2: WordPress Plugin Directory URL 3: local plugin directory */
 		__( 'You can find additional plugins for your site by using the <a href="%1$s">Plugin Browser/Installer</a> functionality or by browsing the <a href="%2$s" target="_blank">WordPress Plugin Directory</a> directly and installing new plugins manually. To manually install a plugin you generally just need to upload the plugin file into your %3$s directory. Once a plugin has been installed, you can activate it here.' ),
 		'plugin-install.php',
-		'https://eddcoons_portfolio.org/plugins/',
+		'https://wordpress.org/plugins/',
 		'<code>/wp-content/plugins</code>'
 	) . '</p>'
 ) );
@@ -393,8 +393,8 @@ get_current_screen()->add_help_tab( array(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __('For more information:') . '</strong></p>' .
-	'<p>' . __('<a href="https://codex.eddcoons_portfolio.org/Managing_Plugins#Plugin_Management" target="_blank">Documentation on Managing Plugins</a>') . '</p>' .
-	'<p>' . __('<a href="https://eddcoons_portfolio.org/support/" target="_blank">Support Forums</a>') . '</p>'
+	'<p>' . __('<a href="https://codex.wordpress.org/Managing_Plugins#Plugin_Management" target="_blank">Documentation on Managing Plugins</a>') . '</p>' .
+	'<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 );
 
 get_current_screen()->set_screen_reader_content( array(

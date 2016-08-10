@@ -202,8 +202,8 @@ get_current_screen()->add_help_tab( array(
 
 get_current_screen()->set_help_sidebar(
     '<p><strong>' . __('For more information:') . '</strong></p>' .
-    '<p>' . __('<a href="https://codex.eddcoons_portfolio.org/Users_Add_New_Screen" target="_blank">Documentation on Adding New Users</a>') . '</p>' .
-    '<p>' . __('<a href="https://eddcoons_portfolio.org/support/" target="_blank">Support Forums</a>') . '</p>'
+    '<p>' . __('<a href="https://codex.wordpress.org/Users_Add_New_Screen" target="_blank">Documentation on Adding New Users</a>') . '</p>' .
+    '<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 );
 
 wp_enqueue_script('wp-ajax-response');

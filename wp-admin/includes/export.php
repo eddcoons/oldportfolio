@@ -47,7 +47,7 @@ function export_wp( $args = array() ) {
 		$sitename .= '.';
 	}
 	$date = date( 'Y-m-d' );
-	$wp_filename = $sitename . 'eddcoons_portfolio.' . $date . '.xml';
+	$wp_filename = $sitename . 'wordpress.' . $date . '.xml';
 	/**
 	 * Filter the export filename.
 	 *

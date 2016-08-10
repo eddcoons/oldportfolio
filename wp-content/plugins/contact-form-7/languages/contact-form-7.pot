@@ -1157,7 +1157,7 @@ msgstr ""
 
 #: contact-form-7/modules/really-simple-captcha.php:19
 msgid ""
-"To use CAPTCHA, you need <a href=\"http://eddcoons_portfolio.org/extend/plugins/"
+"To use CAPTCHA, you need <a href=\"http://wordpress.org/extend/plugins/"
 "really-simple-captcha/\">Really Simple CAPTCHA</a> plugin installed."
 msgstr ""
 

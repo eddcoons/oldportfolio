@@ -1215,7 +1215,7 @@ final class WP_Customize_Manager {
 			/* translators: 1: panel id, 2: link to 'customize_loaded_components' filter reference */
 			$message = sprintf( __( 'Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead.' ),
 				$id,
-				'<a href="' . esc_url( 'https://developer.eddcoons_portfolio.org/reference/hooks/customize_loaded_components/' ) . '"><code>customize_loaded_components</code></a>'
+				'<a href="' . esc_url( 'https://developer.wordpress.org/reference/hooks/customize_loaded_components/' ) . '"><code>customize_loaded_components</code></a>'
 			);
 
 			_doing_it_wrong( __METHOD__, $message, '4.5' );

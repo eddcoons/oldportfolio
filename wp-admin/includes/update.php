@@ -101,7 +101,7 @@ function find_core_auto_update() {
  * @return bool|array False on failure. An array of checksums on success.
  */
 function get_core_checksums( $version, $locale ) {
-	$url = $http_url = 'http://api.eddcoons_portfolio.org/core/checksums/1.0/?' . http_build_query( compact( 'version', 'locale' ), null, '&' );
+	$url = $http_url = 'http://api.wordpress.org/core/checksums/1.0/?' . http_build_query( compact( 'version', 'locale' ), null, '&' );
 
 	if ( $ssl = wp_http_supports( array( 'ssl' ) ) )
 		$url = set_url_scheme( $url, 'https' );
@@ -112,7 +112,7 @@ function get_core_checksums( $version, $locale ) {
 
 	$response = wp_remote_get( $url, $options );
 	if ( $ssl && is_wp_error( $response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$response = wp_remote_get( $http_url, $options );
 	}
 
@@ -231,9 +231,9 @@ function update_nag() {
 		return false;
 
 	if ( current_user_can('update_core') ) {
-		$msg = sprintf( __( '<a href="https://codex.eddcoons_portfolio.org/Version_%1$s">WordPress %1$s</a> is available! <a href="%2$s" aria-label="Please update WordPress now">Please update now</a>.' ), $cur->current, network_admin_url( 'update-core.php' ) );
+		$msg = sprintf( __( '<a href="https://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> is available! <a href="%2$s" aria-label="Please update WordPress now">Please update now</a>.' ), $cur->current, network_admin_url( 'update-core.php' ) );
 	} else {
-		$msg = sprintf( __('<a href="https://codex.eddcoons_portfolio.org/Version_%1$s">WordPress %1$s</a> is available! Please notify the site administrator.'), $cur->current );
+		$msg = sprintf( __('<a href="https://codex.wordpress.org/Version_%1$s">WordPress %1$s</a> is available! Please notify the site administrator.'), $cur->current );
 	}
 	echo "<div class='update-nag'>$msg</div>";
 }

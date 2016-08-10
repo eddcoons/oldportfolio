@@ -818,7 +818,7 @@ if ( ! function_exists( 'ot_type_theme_mode' ) ) {
         
         echo '<h5>' . __( 'Step 1: Include the plugin & turn on theme mode.', 'option-tree' ) . '</h5>';
         echo '<ul class="docs-ul">';
-          echo '<li>' . sprintf( __( 'Download the latest version of %s and unarchive the %s directory.', 'option-tree' ), '<a href="http://eddcoons_portfolio.org/extend/plugins/option-tree/" rel="nofollow" target="_blank">' . __( 'OptionTree', 'option-tree' ) . '</a>', '<code>.zip</code>' ) . '</li>';
+          echo '<li>' . sprintf( __( 'Download the latest version of %s and unarchive the %s directory.', 'option-tree' ), '<a href="http://wordpress.org/extend/plugins/option-tree/" rel="nofollow" target="_blank">' . __( 'OptionTree', 'option-tree' ) . '</a>', '<code>.zip</code>' ) . '</li>';
           echo '<li>' . sprintf( __( 'Put the %s directory in the root of your theme. For example, the server path would be %s.', 'option-tree' ), '<code>option-tree</code>', '<code>/wp-content/themes/theme-name/option-tree/</code>' ) . '</li>';
           echo '<li>' . sprintf( __( 'Add the following code to the beginning of your %s.', 'option-tree' ), '<code>functions.php</code>' ) . '</li>';
         echo '</ul>';

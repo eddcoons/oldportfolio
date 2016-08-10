@@ -6,7 +6,7 @@ Description: Import posts, pages, comments, custom fields, categories, tags and 
 Author: wordpressdotorg
 Author URI: http://wordpress.org/
 Version: 0.6.1
-Text Domain: eddcoons_portfolio-importer
+Text Domain: wordpress-importer
 License: GPL version 2 or later - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 */
 
@@ -71,7 +71,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 		var $featured_images = array();
 
 		// Make the class availible for wpalchemy
-		// This is done differently in the eddcoons_portfolio importer
+		// This is done differently in the wordpress importer
 		function __construct() {
 			$GLOBALS['wp_import'] = $this;
 		}
@@ -100,7 +100,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 					}
 					break;
 				case 2:
-					check_admin_referer( 'import-eddcoons_portfolio' );
+					check_admin_referer( 'import-wordpress' );
 					$this->fetch_attachments = ( ! empty( $_POST['fetch_attachments'] )
 							&& $this->allow_fetch_attachments() );
 					$this->id                = (int) $_POST['import_id'];
@@ -294,8 +294,8 @@ if ( class_exists( 'WP_Importer' ) ) {
 		function import_options() {
 			$j = 0;
 			?>
-			<form action="<?php echo esc_url( admin_url( 'admin.php?import=eddcoons_portfolio&amp;step=2' ) ); ?>" method="post">
-				<?php wp_nonce_field( 'import-eddcoons_portfolio' ); ?>
+			<form action="<?php echo esc_url( admin_url( 'admin.php?import=wordpress&amp;step=2' ) ); ?>" method="post">
+				<?php wp_nonce_field( 'import-wordpress' ); ?>
 				<input type="hidden" name="import_id" value="<?php echo esc_attr( $this->id ) ?>"/>
 
 				<?php if ( ! empty( $this->authors ) ) : ?>
@@ -1245,7 +1245,7 @@ if ( class_exists( 'WP_Importer' ) ) {
 							'zorbix' ) . '</p>';
 			echo '<p>' . esc_html__( 'Choose a WXR (.xml) file to upload, then click Upload file and import.',
 							'zorbix' ) . '</p>';
-			wp_import_upload_form( 'admin.php?import=eddcoons_portfolio&amp;step=1' );
+			wp_import_upload_form( 'admin.php?import=wordpress&amp;step=1' );
 			echo '</div>';
 		}
 

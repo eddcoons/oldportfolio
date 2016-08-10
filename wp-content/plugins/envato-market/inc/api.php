@@ -240,7 +240,7 @@ if ( ! class_exists( 'Envato_Market_API' ) && class_exists( 'Envato_Market' ) ) 
 		public function themes( $args = array() ) {
 			$themes = array();
 
-			$url = 'https://api.envato.com/v2/market/buyer/list-purchases?filter_by=eddcoons_portfolio-themes';
+			$url = 'https://api.envato.com/v2/market/buyer/list-purchases?filter_by=wordpress-themes';
 			$response = $this->request( $url, $args );
 
 			if ( is_wp_error( $response ) || empty( $response ) || empty( $response['results'] ) ) {
@@ -287,7 +287,7 @@ if ( ! class_exists( 'Envato_Market_API' ) && class_exists( 'Envato_Market' ) ) 
 		public function plugins( $args = array() ) {
 			$plugins = array();
 
-			$url = 'https://api.envato.com/v2/market/buyer/list-purchases?filter_by=eddcoons_portfolio-plugins';
+			$url = 'https://api.envato.com/v2/market/buyer/list-purchases?filter_by=wordpress-plugins';
 			$response = $this->request( $url, $args );
 
 			if ( is_wp_error( $response ) || empty( $response ) || empty( $response['results'] ) ) {

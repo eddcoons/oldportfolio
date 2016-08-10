@@ -71,7 +71,7 @@ class WP_oEmbed {
 			'http://i*.photobucket.com/albums/*'                  => array( 'http://api.photobucket.com/oembed',                         false ),
 			'http://gi*.photobucket.com/groups/*'                 => array( 'http://api.photobucket.com/oembed',                         false ),
 			'#https?://(www\.)?scribd\.com/doc/.*#i'              => array( 'http://www.scribd.com/services/oembed',                     true  ),
-			'#https?://eddcoons_portfolio.tv/.*#i'                         => array( 'http://eddcoons_portfolio.tv/oembed/',                               true  ),
+			'#https?://wordpress.tv/.*#i'                         => array( 'http://wordpress.tv/oembed/',                               true  ),
 			'#https?://(.+\.)?polldaddy\.com/.*#i'                => array( 'https://polldaddy.com/oembed/',                             true  ),
 			'#https?://poll\.fm/.*#i'                             => array( 'https://polldaddy.com/oembed/',                             true  ),
 			'#https?://(www\.)?funnyordie\.com/videos/.*#i'       => array( 'http://www.funnyordie.com/oembed',                          true  ),
@@ -95,7 +95,7 @@ class WP_oEmbed {
 			'#https?://kck\.st/.*#i'                              => array( 'https://www.kickstarter.com/services/oembed',               true  ),
 			'#https?://cloudup\.com/.*#i'                         => array( 'https://cloudup.com/oembed',                                true  ),
 			'#https?://(www\.)?reverbnation\.com/.*#i'            => array( 'https://www.reverbnation.com/oembed',                       true  ),
-			'#https?://videopress.com/v/.*#'                      => array( 'https://public-api.eddcoons_portfolio.com/oembed/1.0/?for=' . $host, true  ),
+			'#https?://videopress.com/v/.*#'                      => array( 'https://public-api.wordpress.com/oembed/1.0/?for=' . $host, true  ),
 			'#https?://(www\.)?reddit\.com/r/[^/]+/comments/.*#i' => array( 'https://www.reddit.com/oembed',                             true  ),
 			'#https?://(www\.)?speakerdeck\.com/.*#i'             => array( 'https://speakerdeck.com/oembed.{format}',                   true  ),
 		);
@@ -131,7 +131,7 @@ class WP_oEmbed {
 		 * | Photobucket  | photobucket.com       |      No        | 2.9.0     |
 		 * | Scribd       | scribd.com            |      Yes       | 2.9.0     |
 		 * | Vimeo        | vimeo.com             |      Yes       | 2.9.0     |
-		 * | WordPress.tv | eddcoons_portfolio.tv          |      Yes       | 2.9.0     |
+		 * | WordPress.tv | wordpress.tv          |      Yes       | 2.9.0     |
 		 * | YouTube      | youtube.com/watch     |      Yes       | 2.9.0     |
 		 * | Funny or Die | funnyordie.com        |      Yes       | 3.0.0     |
 		 * | Polldaddy    | polldaddy.com         |      Yes       | 3.0.0     |

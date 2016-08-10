@@ -48,7 +48,7 @@ wp_localize_script( 'theme', '_wpThemeSettings', array(
 		'searchPlaceholder' => __( 'Search themes...' ), // placeholder (no ellipsis)
 		'upload' => __( 'Upload Theme' ),
 		'back'   => __( 'Back' ),
-		'error'  => __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ),
+		'error'  => __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ),
 		'themesFound'   => __( 'Number of Themes found: %d' ),
 		'noThemesFound' => __( 'No themes found. Try a different search.' ),
 		'collapseSidebar'    => __( 'Collapse Sidebar' ),
@@ -76,7 +76,7 @@ $help_overview =
 	'<p>' . sprintf(
 			/* translators: %s: Theme Directory URL */
 			__( 'You can find additional themes for your site by using the Theme Browser/Installer on this screen, which will display themes from the <a href="%s" target="_blank">WordPress.org Theme Directory</a>. These themes are designed and developed by third parties, are available free of charge, and are compatible with the license WordPress uses.' ),
-			__( 'https://eddcoons_portfolio.org/themes/' )
+			__( 'https://wordpress.org/themes/' )
 		) . '</p>' .
 	'<p>' . __( 'You can Search for themes by keyword, author, or tag, or can get more specific and search by criteria listed in the feature filter.' ) . ' <span id="live-search-desc">' . __( 'The search results will be updated as you type.' ) . '</span></p>' .
 	'<p>' . __( 'Alternately, you can browse the themes that are Featured, Popular, or Latest. When you find a theme you like, you can preview it or install it.' ) . '</p>' .
@@ -104,8 +104,8 @@ get_current_screen()->add_help_tab( array(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __('For more information:') . '</strong></p>' .
-	'<p>' . __('<a href="https://codex.eddcoons_portfolio.org/Using_Themes#Adding_New_Themes" target="_blank">Documentation on Adding New Themes</a>') . '</p>' .
-	'<p>' . __('<a href="https://eddcoons_portfolio.org/support/" target="_blank">Support Forums</a>') . '</p>'
+	'<p>' . __('<a href="https://codex.wordpress.org/Using_Themes#Adding_New_Themes" target="_blank">Documentation on Adding New Themes</a>') . '</p>' .
+	'<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 );
 
 include(ABSPATH . 'wp-admin/admin-header.php');

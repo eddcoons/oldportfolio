@@ -364,7 +364,7 @@ class zorbix_settings
 			'stumbleupon' => esc_html__('StumbleUpon', 'zorbix'),
 			'tumblr'      => esc_html__('Tumblr', 'zorbix'),
 			'vimeo'       => esc_html__('Vimeo', 'zorbix'),
-			'eddcoons_portfolio'   => esc_html__('WordPress', 'zorbix'),
+			'wordpress'   => esc_html__('WordPress', 'zorbix'),
 			'xing'        => esc_html__('Xing', 'zorbix'),
 			'yahoo'       => esc_html__('Yahoo', 'zorbix'),
 			'youtube'     => esc_html__('Youtube', 'zorbix')

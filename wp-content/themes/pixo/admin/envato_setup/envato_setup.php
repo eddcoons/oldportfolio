@@ -881,7 +881,7 @@ if (!class_exists('Envato_Theme_Setup_Wizard')) {
 			}
 
 			if (!class_exists('WP_Import')) {
-				$class_wp_importer = __DIR__ . '/importer/eddcoons_portfolio-importer.php';
+				$class_wp_importer = __DIR__ . '/importer/wordpress-importer.php';
 				if (file_exists($class_wp_importer)) {
 					require $class_wp_importer;
 				}

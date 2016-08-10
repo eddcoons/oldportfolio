@@ -61,7 +61,7 @@ class RevSliderBase {
 	
 	/**
 	 * 
-	 * add some eddcoons_portfolio action
+	 * add some wordpress action
 	 */
 	protected static function addAction($action,$eventFunction){
 		

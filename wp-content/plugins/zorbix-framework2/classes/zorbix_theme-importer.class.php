@@ -40,7 +40,7 @@ class Zorbix_Importer
 	{
 
 		// Include Custom Importer Class
-		include(ZORBIX_PLUGIN_DIR . 'importer/wp-importer/eddcoons_portfolio-importer.php');
+		include(ZORBIX_PLUGIN_DIR . 'importer/wp-importer/wordpress-importer.php');
 
 		// Import file
 		$newimport = new zorbix_wp_importer();

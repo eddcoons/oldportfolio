@@ -14,7 +14,7 @@
  * @copyright Copyright (c) 2011, Thomas Griffin
  * @license   GPL-2.0+
  *
- * @eddcoons_portfolio-plugin
+ * @wordpress-plugin
  * Plugin Name: TGM Plugin Activation
  * Plugin URI:
  * Description: Plugin installation and activation for WordPress themes.
@@ -75,7 +75,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @since 2.5.0
 		 */
-		const WP_REPO_REGEX = '|^http[s]?://eddcoons_portfolio\.org/(?:extend/)?plugins/|';
+		const WP_REPO_REGEX = '|^http[s]?://wordpress\.org/(?:extend/)?plugins/|';
 
 		/**
 		 * Arbitrary regular expression to test if a string starts with a URL.

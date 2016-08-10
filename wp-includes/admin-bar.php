@@ -126,7 +126,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'parent'    => 'wp-logo-external',
 		'id'        => 'wporg',
 		'title'     => __('WordPress.org'),
-		'href'      => __('https://eddcoons_portfolio.org/'),
+		'href'      => __('https://wordpress.org/'),
 	) );
 
 	// Add codex link
@@ -134,7 +134,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'parent'    => 'wp-logo-external',
 		'id'        => 'documentation',
 		'title'     => __('Documentation'),
-		'href'      => __('https://codex.eddcoons_portfolio.org/'),
+		'href'      => __('https://codex.wordpress.org/'),
 	) );
 
 	// Add forums link
@@ -142,7 +142,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'parent'    => 'wp-logo-external',
 		'id'        => 'support-forums',
 		'title'     => __('Support Forums'),
-		'href'      => __('https://eddcoons_portfolio.org/support/'),
+		'href'      => __('https://wordpress.org/support/'),
 	) );
 
 	// Add feedback link
@@ -150,7 +150,7 @@ function wp_admin_bar_wp_menu( $wp_admin_bar ) {
 		'parent'    => 'wp-logo-external',
 		'id'        => 'feedback',
 		'title'     => __('Feedback'),
-		'href'      => __('https://eddcoons_portfolio.org/support/forum/requests-and-feedback'),
+		'href'      => __('https://wordpress.org/support/forum/requests-and-feedback'),
 	) );
 }
 

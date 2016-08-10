@@ -368,7 +368,7 @@ final class _WP_Editors {
 					 * @param array  $plugins   An array of teenyMCE plugins.
 					 * @param string $editor_id Unique editor identifier, e.g. 'content'.
 					 */
-					self::$plugins = $plugins = apply_filters( 'teeny_mce_plugins', array( 'colorpicker', 'lists', 'fullscreen', 'image', 'eddcoons_portfolio', 'wpeditimage', 'wplink' ), $editor_id );
+					self::$plugins = $plugins = apply_filters( 'teeny_mce_plugins', array( 'colorpicker', 'lists', 'fullscreen', 'image', 'wordpress', 'wpeditimage', 'wplink' ), $editor_id );
 				} else {
 
 					/**
@@ -400,7 +400,7 @@ final class _WP_Editors {
 						'tabfocus',
 						'textcolor',
 						'fullscreen',
-						'eddcoons_portfolio',
+						'wordpress',
 						'wpautoresize',
 						'wpeditimage',
 						'wpemoji',
@@ -564,7 +564,7 @@ final class _WP_Editors {
 				// WordPress default stylesheet and dashicons
 				$mce_css = array(
 					$dashicons,
-					self::$baseurl . '/skins/eddcoons_portfolio/wp-content.css?' . $version
+					self::$baseurl . '/skins/wordpress/wp-content.css?' . $version
 				);
 
 				$editor_styles = get_editor_stylesheets();

@@ -26,7 +26,7 @@ $options_help = '<p>' . __('The fields on this screen determine some of the basi
 	'<p>' . __('Most themes display the site title at the top of every page, in the title bar of the browser, and as the identifying name for syndicated feeds. The tagline is also displayed by many themes.') . '</p>';
 
 if ( ! is_multisite() ) {
-	$options_help .= '<p>' . __('The WordPress URL and the Site URL can be the same (example.com) or different; for example, having the WordPress core files (example.com/eddcoons_portfolio) in a subdirectory instead of the root directory.') . '</p>' .
+	$options_help .= '<p>' . __('The WordPress URL and the Site URL can be the same (example.com) or different; for example, having the WordPress core files (example.com/wordpress) in a subdirectory instead of the root directory.') . '</p>' .
 		'<p>' . __('If you want site visitors to be able to register themselves, as opposed to by the site administrator, check the membership box. A default user role can be set for all new users, whether self-registered or registered by the site admin.') . '</p>';
 }
 
@@ -42,8 +42,8 @@ get_current_screen()->add_help_tab( array(
 
 get_current_screen()->set_help_sidebar(
 	'<p><strong>' . __('For more information:') . '</strong></p>' .
-	'<p>' . __('<a href="https://codex.eddcoons_portfolio.org/Settings_General_Screen" target="_blank">Documentation on General Settings</a>') . '</p>' .
-	'<p>' . __('<a href="https://eddcoons_portfolio.org/support/" target="_blank">Support Forums</a>') . '</p>'
+	'<p>' . __('<a href="https://codex.wordpress.org/Settings_General_Screen" target="_blank">Documentation on General Settings</a>') . '</p>' .
+	'<p>' . __('<a href="https://wordpress.org/support/" target="_blank">Support Forums</a>') . '</p>'
 );
 
 include( ABSPATH . 'wp-admin/admin-header.php' );
@@ -74,7 +74,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 <th scope="row"><label for="home"><?php _e('Site Address (URL)') ?></label></th>
 <td><input name="home" type="url" id="home" aria-describedby="home-description" value="<?php form_option( 'home' ); ?>"<?php disabled( defined( 'WP_HOME' ) ); ?> class="regular-text code<?php if ( defined( 'WP_HOME' ) ) echo ' disabled' ?>" />
 <?php if ( ! defined( 'WP_HOME' ) ) : ?>
-<p class="description" id="home-description"><?php _e( 'Enter the address here if you <a href="https://codex.eddcoons_portfolio.org/Giving_WordPress_Its_Own_Directory">want your site home page to be different from your WordPress installation directory.</a>' ); ?></p></td>
+<p class="description" id="home-description"><?php _e( 'Enter the address here if you <a href="https://codex.wordpress.org/Giving_WordPress_Its_Own_Directory">want your site home page to be different from your WordPress installation directory.</a>' ); ?></p></td>
 <?php endif; ?>
 </tr>
 <tr>
@@ -295,7 +295,7 @@ if ( empty($tzstring) ) { // Create a UTC+- zone if no timezone string exists
 		'<span class="screen-reader-text">' . __( 'example:' ) . ' </span> <span class="example">' . date_i18n( get_option( 'time_format' ) ) . '</span>' .
 		"<span class='spinner'></span>\n";
 
-	echo "\t<p class='date-time-doc'>" . __('<a href="https://codex.eddcoons_portfolio.org/Formatting_Date_and_Time">Documentation on date and time formatting</a>.') . "</p>\n";
+	echo "\t<p class='date-time-doc'>" . __('<a href="https://codex.wordpress.org/Formatting_Date_and_Time">Documentation on date and time formatting</a>.') . "</p>\n";
 ?>
 	</fieldset>
 </td>

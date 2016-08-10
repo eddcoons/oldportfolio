@@ -130,9 +130,9 @@ $_old_files = array(
 'wp-includes/js/tinymce/plugins/spellchecker/images',
 'wp-includes/js/tinymce/plugins/spellchecker/langs',
 'wp-includes/js/tinymce/plugins/spellchecker/tinyspell.php',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/images',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/langs',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/eddcoons_portfolio.css',
+'wp-includes/js/tinymce/plugins/wordpress/images',
+'wp-includes/js/tinymce/plugins/wordpress/langs',
+'wp-includes/js/tinymce/plugins/wordpress/wordpress.css',
 'wp-includes/js/tinymce/plugins/wphelp',
 'wp-includes/js/tinymce/themes/advanced/css',
 'wp-includes/js/tinymce/themes/advanced/images',
@@ -143,7 +143,7 @@ $_old_files = array(
 // 2.6
 'wp-admin/bookmarklet.php',
 'wp-includes/js/jquery/jquery.dimensions.min.js',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/popups.css',
+'wp-includes/js/tinymce/plugins/wordpress/popups.css',
 'wp-includes/js/wp-ajax.js',
 // 2.7
 'wp-admin/css/press-this-ie-rtl.css',
@@ -187,7 +187,7 @@ $_old_files = array(
 'wp-includes/js/tinymce/plugins/autosave',
 'wp-includes/js/tinymce/plugins/paste/css',
 'wp-includes/js/tinymce/utils/mclayer.js',
-'wp-includes/js/tinymce/eddcoons_portfolio.css',
+'wp-includes/js/tinymce/wordpress.css',
 // 2.8.5
 'wp-admin/import/btt.php',
 'wp-admin/import/jkw.php',
@@ -199,7 +199,7 @@ $_old_files = array(
 'wp-admin/js/slug.dev.js',
 'wp-admin/js/slug.js',
 'wp-includes/gettext.php',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/js',
+'wp-includes/js/tinymce/plugins/wordpress/js',
 'wp-includes/streams.php',
 // MU
 'README.txt',
@@ -216,7 +216,7 @@ $_old_files = array(
 'wp-admin/wpmu-themes.php',
 'wp-admin/wpmu-upgrade-site.php',
 'wp-admin/wpmu-users.php',
-'wp-includes/images/eddcoons_portfolio-mu.png',
+'wp-includes/images/wordpress-mu.png',
 'wp-includes/wpmu-default-filters.php',
 'wp-includes/wpmu-functions.php',
 'wpmu-settings.php',
@@ -282,9 +282,9 @@ $_old_files = array(
 'wp-admin/js/list-table.dev.js',
 'wp-admin/js/list-table.js',
 'wp-includes/default-embeds.php',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/img/help.gif',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/img/more.gif',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/img/toolbars.gif',
+'wp-includes/js/tinymce/plugins/wordpress/img/help.gif',
+'wp-includes/js/tinymce/plugins/wordpress/img/more.gif',
+'wp-includes/js/tinymce/plugins/wordpress/img/toolbars.gif',
 'wp-includes/js/tinymce/themes/advanced/img/fm.gif',
 'wp-includes/js/tinymce/themes/advanced/img/sflogo.png',
 // 3.3
@@ -371,11 +371,11 @@ $_old_files = array(
 'wp-includes/css/editor-buttons.css',
 'wp-includes/css/editor-buttons.dev.css',
 'wp-includes/js/tinymce/plugins/paste/blank.htm',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/css',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/editor_plugin.dev.js',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/img/embedded.png',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/img/more_bug.gif',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/img/page_bug.gif',
+'wp-includes/js/tinymce/plugins/wordpress/css',
+'wp-includes/js/tinymce/plugins/wordpress/editor_plugin.dev.js',
+'wp-includes/js/tinymce/plugins/wordpress/img/embedded.png',
+'wp-includes/js/tinymce/plugins/wordpress/img/more_bug.gif',
+'wp-includes/js/tinymce/plugins/wordpress/img/page_bug.gif',
 'wp-includes/js/tinymce/plugins/wpdialogs/editor_plugin.dev.js',
 'wp-includes/js/tinymce/plugins/wpeditimage/css/editimage-rtl.css',
 'wp-includes/js/tinymce/plugins/wpeditimage/editor_plugin.dev.js',
@@ -584,7 +584,7 @@ $_old_files = array(
 'wp-admin/images/about-search-2x.png',
 'wp-admin/images/bubble_bg-rtl-2x.gif',
 'wp-admin/images/wp-badge-2x.png',
-'wp-admin/images/eddcoons_portfolio-logo-2x.png',
+'wp-admin/images/wordpress-logo-2x.png',
 'wp-admin/images/bubble_bg-rtl.gif',
 'wp-admin/images/wp-badge.png',
 'wp-admin/images/menu-shadow.png',
@@ -618,7 +618,7 @@ $_old_files = array(
 'wp-includes/js/tinymce/plugins/inlinepopups',
 'wp-includes/js/tinymce/plugins/media/js',
 'wp-includes/js/tinymce/plugins/media/css',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/img',
+'wp-includes/js/tinymce/plugins/wordpress/img',
 'wp-includes/js/tinymce/plugins/wpdialogs/js',
 'wp-includes/js/tinymce/plugins/wpeditimage/img',
 'wp-includes/js/tinymce/plugins/wpeditimage/js',
@@ -637,8 +637,8 @@ $_old_files = array(
 'wp-includes/js/tinymce/plugins/wpview/editor_plugin.js',
 'wp-includes/js/tinymce/plugins/directionality/editor_plugin.js',
 'wp-includes/js/tinymce/plugins/directionality/editor_plugin_src.js',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/editor_plugin.js',
-'wp-includes/js/tinymce/plugins/eddcoons_portfolio/editor_plugin_src.js',
+'wp-includes/js/tinymce/plugins/wordpress/editor_plugin.js',
+'wp-includes/js/tinymce/plugins/wordpress/editor_plugin_src.js',
 'wp-includes/js/tinymce/plugins/wpdialogs/editor_plugin_src.js',
 'wp-includes/js/tinymce/plugins/wpdialogs/editor_plugin.js',
 'wp-includes/js/tinymce/plugins/wpeditimage/editimage.html',
@@ -695,7 +695,7 @@ $_old_files = array(
 'wp-includes/js/jquery/ui/jquery.ui.tabs.min.js',
 'wp-includes/js/jquery/ui/jquery.ui.tooltip.min.js',
 'wp-includes/js/jquery/ui/jquery.ui.widget.min.js',
-'wp-includes/js/tinymce/skins/eddcoons_portfolio/images/dashicon-no-alt.png',
+'wp-includes/js/tinymce/skins/wordpress/images/dashicon-no-alt.png',
 // 4.3
 'wp-admin/js/wp-fullscreen.js',
 'wp-admin/js/wp-fullscreen.min.js',
@@ -823,7 +823,7 @@ function update_core($from, $to) {
 
 	// Sanity check the unzipped distribution.
 	$distro = '';
-	$roots = array( '/eddcoons_portfolio/', '/eddcoons_portfolio-mu/' );
+	$roots = array( '/wordpress/', '/wordpress-mu/' );
 	foreach ( $roots as $root ) {
 		if ( $wp_filesystem->exists( $from . $root . 'readme.html' ) && $wp_filesystem->exists( $from . $root . 'wp-includes/version.php' ) ) {
 			$distro = $root;

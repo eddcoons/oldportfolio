@@ -508,7 +508,7 @@
 					src = checkUrl( src );
 					displaySrc = src.replace( /^(http[^\?]+)(\?.*)?$/, '$1' );
 
-					if ( src.indexOf( 'files.eddcoons_portfolio.com/' ) > -1 ) {
+					if ( src.indexOf( 'files.wordpress.com/' ) > -1 ) {
 						displaySrc = displaySrc.replace( /\?.*$/, '' ) + '?w=' + smallestWidth;
 					} else if ( src.indexOf( 'gravatar.com/' ) > -1 ) {
 						displaySrc = displaySrc.replace( /\?.*$/, '' ) + '?s=' + smallestWidth;

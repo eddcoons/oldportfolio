@@ -198,7 +198,7 @@ function zorbix_page_settings() {
 							'Your embed Url here. This uses the WordPress embed shortcode, see here for list of embed types. %s Wordpress Codex: Embeds %s',
 							'zorbix'
 						),
-						'<a href="https://codex.eddcoons_portfolio.org/Embeds">',
+						'<a href="https://codex.wordpress.org/Embeds">',
 						'</a>'
 					),
 				),
@@ -279,10 +279,10 @@ function zorbix_page_settings() {
 					'label' => esc_html__( 'Audio Embed', 'zorbix' ),
 					'desc'  => sprintf(
 						esc_html__(
-							'Your embed Url here. This uses the eddcoons_portfolio embed shortcode, see here for list of embed types. %s Wordpress Codex: Embeds %s',
+							'Your embed Url here. This uses the wordpress embed shortcode, see here for list of embed types. %s Wordpress Codex: Embeds %s',
 							'zorbix'
 						),
-						'<a href="https://codex.eddcoons_portfolio.org/Embeds">',
+						'<a href="https://codex.wordpress.org/Embeds">',
 						'</a>'
 					),
 				),

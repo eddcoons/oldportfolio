@@ -2335,7 +2335,7 @@ class Core_Upgrader extends WP_Upgrader {
 		}
 
 		// Copy update-core.php from the new version into place.
-		if ( !$wp_filesystem->copy($working_dir . '/eddcoons_portfolio/wp-admin/includes/update-core.php', $wp_dir . 'wp-admin/includes/update-core.php', true) ) {
+		if ( !$wp_filesystem->copy($working_dir . '/wordpress/wp-admin/includes/update-core.php', $wp_dir . 'wp-admin/includes/update-core.php', true) ) {
 			$wp_filesystem->delete($working_dir, true);
 			WP_Upgrader::release_lock( 'core_updater' );
 			return new WP_Error( 'copy_failed_for_update_core_file', __( 'The update cannot be installed because we will be unable to copy some files. This is usually due to inconsistent file permissions.' ), 'wp-admin/includes/update-core.php' );
@@ -3375,7 +3375,7 @@ class WP_Automatic_Updater {
 		} else {
 			// Add a note about the support forums.
 			$body .= "\n\n" . __( 'If you experience any issues or need support, the volunteers in the WordPress.org support forums may be able to help.' );
-			$body .= "\n" . __( 'https://eddcoons_portfolio.org/support/' );
+			$body .= "\n" . __( 'https://wordpress.org/support/' );
 		}
 
 		// Updates are important!
@@ -3526,8 +3526,8 @@ class WP_Automatic_Updater {
 This debugging email is sent when you are using a development version of WordPress.
 
 If you think these failures might be due to a bug in WordPress, could you report it?
- * Open a thread in the support forums: https://eddcoons_portfolio.org/support/forum/alphabeta
- * Or, if you're comfortable writing a bug report: https://core.trac.eddcoons_portfolio.org/
+ * Open a thread in the support forums: https://wordpress.org/support/forum/alphabeta
+ * Or, if you're comfortable writing a bug report: https://core.trac.wordpress.org/
 
 Thanks! -- The WordPress Team" ) );
 			$body[] = '';

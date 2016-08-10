@@ -38,7 +38,7 @@ $pixo_map = array(
 	'category'    => esc_html__('Zorbix', 'pixo'),
 	'icon'        => 'fa fa-file-video-o',
 	'params'      => $pixo_map_params,
-	'description' => esc_html('Wrapper for the WordPress function https://codex.eddcoons_portfolio.org/Embeds')
+	'description' => esc_html('Wrapper for the WordPress function https://codex.wordpress.org/Embeds')
 );
 
 $pixo_map_name = zorbix_builder::add_map($pixo_map);

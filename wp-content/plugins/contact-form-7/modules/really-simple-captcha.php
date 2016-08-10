@@ -16,7 +16,7 @@ function wpcf7_captcha_shortcode_handler( $tag ) {
 	$tag = new WPCF7_Shortcode( $tag );
 
 	if ( 'captchac' == $tag->type && ! class_exists( 'ReallySimpleCaptcha' ) )
-		return '<em>' . __( 'To use CAPTCHA, you need <a href="http://eddcoons_portfolio.org/extend/plugins/really-simple-captcha/">Really Simple CAPTCHA</a> plugin installed.', 'contact-form-7' ) . '</em>';
+		return '<em>' . __( 'To use CAPTCHA, you need <a href="http://wordpress.org/extend/plugins/really-simple-captcha/">Really Simple CAPTCHA</a> plugin installed.', 'contact-form-7' ) . '</em>';
 
 	if ( empty( $tag->name ) )
 		return '';
@@ -210,7 +210,7 @@ function wpcf7_tag_generator_captcha( $contact_form, $args = '' ) {
 ?>
 <div class="control-box">
 <fieldset>
-<legend><?php echo sprintf( esc_html( __( "To use CAPTCHA, you first need to install and activate %s plugin.", 'contact-form-7' ) ), wpcf7_link( 'http://eddcoons_portfolio.org/extend/plugins/really-simple-captcha/', 'Really Simple CAPTCHA' ) ); ?></legend>
+<legend><?php echo sprintf( esc_html( __( "To use CAPTCHA, you first need to install and activate %s plugin.", 'contact-form-7' ) ), wpcf7_link( 'http://wordpress.org/extend/plugins/really-simple-captcha/', 'Really Simple CAPTCHA' ) ); ?></legend>
 </fieldset>
 </div>
 <?php

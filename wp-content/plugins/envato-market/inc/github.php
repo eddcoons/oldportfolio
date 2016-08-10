@@ -157,7 +157,7 @@ if ( ! class_exists( 'Envato_Market_Github' ) ) :
 		public function update_check( $request, $url ) {
 
 			// Plugin update request.
-			if ( false !== strpos( $url, '//api.eddcoons_portfolio.org/plugins/update-check/1.1/' ) ) {
+			if ( false !== strpos( $url, '//api.wordpress.org/plugins/update-check/1.1/' ) ) {
 
 				// Decode JSON so we can manipulate the array.
 				$data = json_decode( $request['body']['plugins'] );

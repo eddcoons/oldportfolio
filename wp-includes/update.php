@@ -10,7 +10,7 @@
  * Check WordPress version against the newest version.
  *
  * The WordPress version, PHP version, and Locale is sent. Checks against the
- * WordPress server at api.eddcoons_portfolio.org server. Will only check if WordPress
+ * WordPress server at api.wordpress.org server. Will only check if WordPress
  * isn't installing.
  *
  * @since 2.3.0
@@ -104,7 +104,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 	if ( is_array( $extra_stats ) )
 		$post_body = array_merge( $post_body, $extra_stats );
 
-	$url = $http_url = 'http://api.eddcoons_portfolio.org/core/version-check/1.7/?' . http_build_query( $query, null, '&' );
+	$url = $http_url = 'http://api.wordpress.org/core/version-check/1.7/?' . http_build_query( $query, null, '&' );
 	if ( $ssl = wp_http_supports( array( 'ssl' ) ) )
 		$url = set_url_scheme( $url, 'https' );
 
@@ -120,7 +120,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
 
 	$response = wp_remote_post( $url, $options );
 	if ( $ssl && is_wp_error( $response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$response = wp_remote_post( $http_url, $options );
 	}
 
@@ -180,7 +180,7 @@ function wp_version_check( $extra_stats = array(), $force_check = false ) {
  *
  * The WordPress version, PHP version, and Locale is sent along with a list of
  * all plugins installed. Checks against the WordPress server at
- * api.eddcoons_portfolio.org. Will only check if WordPress isn't installing.
+ * api.wordpress.org. Will only check if WordPress isn't installing.
  *
  * @since 2.3.0
  * @global string $wp_version Used to notify the WordPress version.
@@ -297,13 +297,13 @@ function wp_update_plugins( $extra_stats = array() ) {
 		$options['body']['update_stats'] = wp_json_encode( $extra_stats );
 	}
 
-	$url = $http_url = 'http://api.eddcoons_portfolio.org/plugins/update-check/1.1/';
+	$url = $http_url = 'http://api.wordpress.org/plugins/update-check/1.1/';
 	if ( $ssl = wp_http_supports( array( 'ssl' ) ) )
 		$url = set_url_scheme( $url, 'https' );
 
 	$raw_response = wp_remote_post( $url, $options );
 	if ( $ssl && is_wp_error( $raw_response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$raw_response = wp_remote_post( $http_url, $options );
 	}
 
@@ -345,7 +345,7 @@ function wp_update_plugins( $extra_stats = array() ) {
  * Check theme versions against the latest versions hosted on WordPress.org.
  *
  * A list of all themes installed in sent to WP. Checks against the
- * WordPress server at api.eddcoons_portfolio.org. Will only check if WordPress isn't
+ * WordPress server at api.wordpress.org. Will only check if WordPress isn't
  * installing.
  *
  * @since 2.7.0
@@ -470,13 +470,13 @@ function wp_update_themes( $extra_stats = array() ) {
 		$options['body']['update_stats'] = wp_json_encode( $extra_stats );
 	}
 
-	$url = $http_url = 'http://api.eddcoons_portfolio.org/themes/update-check/1.1/';
+	$url = $http_url = 'http://api.wordpress.org/themes/update-check/1.1/';
 	if ( $ssl = wp_http_supports( array( 'ssl' ) ) )
 		$url = set_url_scheme( $url, 'https' );
 
 	$raw_response = wp_remote_post( $url, $options );
 	if ( $ssl && is_wp_error( $raw_response ) ) {
-		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+		trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 		$raw_response = wp_remote_post( $http_url, $options );
 	}
 
@@ -541,7 +541,7 @@ function wp_get_translation_updates() {
  * @return array
  */
 function wp_get_update_data() {
-	$counts = array( 'plugins' => 0, 'themes' => 0, 'eddcoons_portfolio' => 0, 'translations' => 0 );
+	$counts = array( 'plugins' => 0, 'themes' => 0, 'wordpress' => 0, 'translations' => 0 );
 
 	if ( $plugins = current_user_can( 'update_plugins' ) ) {
 		$update_plugins = get_site_transient( 'update_plugins' );
@@ -558,16 +558,16 @@ function wp_get_update_data() {
 	if ( ( $core = current_user_can( 'update_core' ) ) && function_exists( 'get_core_updates' ) ) {
 		$update_wordpress = get_core_updates( array('dismissed' => false) );
 		if ( ! empty( $update_wordpress ) && ! in_array( $update_wordpress[0]->response, array('development', 'latest') ) && current_user_can('update_core') )
-			$counts['eddcoons_portfolio'] = 1;
+			$counts['wordpress'] = 1;
 	}
 
 	if ( ( $core || $plugins || $themes ) && wp_get_translation_updates() )
 		$counts['translations'] = 1;
 
-	$counts['total'] = $counts['plugins'] + $counts['themes'] + $counts['eddcoons_portfolio'] + $counts['translations'];
+	$counts['total'] = $counts['plugins'] + $counts['themes'] + $counts['wordpress'] + $counts['translations'];
 	$titles = array();
-	if ( $counts['eddcoons_portfolio'] )
-		$titles['eddcoons_portfolio'] = sprintf( __( '%d WordPress Update'), $counts['eddcoons_portfolio'] );
+	if ( $counts['wordpress'] )
+		$titles['wordpress'] = sprintf( __( '%d WordPress Update'), $counts['wordpress'] );
 	if ( $counts['plugins'] )
 		$titles['plugins'] = sprintf( _n( '%d Plugin Update', '%d Plugin Updates', $counts['plugins'] ), $counts['plugins'] );
 	if ( $counts['themes'] )

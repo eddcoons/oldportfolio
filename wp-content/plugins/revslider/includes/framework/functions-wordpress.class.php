@@ -122,7 +122,7 @@ class RevSliderFunctionsWP {
 	
 	/**
 	 * 
-	 * get eddcoons_portfolio base path
+	 * get wordpress base path
 	 */
 	public static function getPathBase(){
 		return ABSPATH;

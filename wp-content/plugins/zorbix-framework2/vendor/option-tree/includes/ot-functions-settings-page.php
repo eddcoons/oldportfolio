@@ -363,7 +363,7 @@ if ( ! function_exists( 'ot_type_export_settings_file' ) ) {
         /* description */
         echo '<div class="description">';
           
-          echo '<p>' . sprintf( __( 'Export your Settings into a fully functional %s file. If you want to add your own custom %s text domain to the file, enter it into the text field before exporting. For more information on how to use this file read the documentation on %s. Remember, you should always check the file for errors before including it in your theme.', 'option-tree' ), '<code>theme-options.php</code>', '<a href="http://codex.eddcoons_portfolio.org/I18n_for_WordPress_Developers" target="_blank">I18n</a>', '<a href="' . get_admin_url( $blog_id, 'admin.php?page=ot-documentation#section_theme_mode' ) . '">' . __( 'Theme Mode', 'option-tree' ) . '</a>' ) . '</p>';
+          echo '<p>' . sprintf( __( 'Export your Settings into a fully functional %s file. If you want to add your own custom %s text domain to the file, enter it into the text field before exporting. For more information on how to use this file read the documentation on %s. Remember, you should always check the file for errors before including it in your theme.', 'option-tree' ), '<code>theme-options.php</code>', '<a href="http://codex.wordpress.org/I18n_for_WordPress_Developers" target="_blank">I18n</a>', '<a href="' . get_admin_url( $blog_id, 'admin.php?page=ot-documentation#section_theme_mode' ) . '">' . __( 'Theme Mode', 'option-tree' ) . '</a>' ) . '</p>';
           
         echo '</div>';
           

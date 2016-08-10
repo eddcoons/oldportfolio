@@ -186,7 +186,7 @@ function get_category_template() {
 /**
  * Retrieve path of tag template in current or parent template.
  *
- * Works by first retrieving the current tag name, for example 'tag-eddcoons_portfolio.php',
+ * Works by first retrieving the current tag name, for example 'tag-wordpress.php',
  * and then trying tag ID, for example 'tag-1.php', and will finally fall back to
  * tag.php template, if those files don't exist.
  *

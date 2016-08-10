@@ -1072,7 +1072,7 @@ function wp_dashboard_primary() {
 			 *
 			 * @param string $link The widget's primary link URL.
 			 */
-			'link' => apply_filters( 'dashboard_primary_link', __( 'https://eddcoons_portfolio.org/news/' ) ),
+			'link' => apply_filters( 'dashboard_primary_link', __( 'https://wordpress.org/news/' ) ),
 
 			/**
 			 * Filter the primary feed URL for the 'WordPress News' dashboard widget.
@@ -1081,7 +1081,7 @@ function wp_dashboard_primary() {
 			 *
 			 * @param string $url The widget's primary feed URL.
 			 */
-			'url' => apply_filters( 'dashboard_primary_feed', __( 'http://eddcoons_portfolio.org/news/feed/' ) ),
+			'url' => apply_filters( 'dashboard_primary_feed', __( 'http://wordpress.org/news/feed/' ) ),
 
 			/**
 			 * Filter the primary link title for the 'WordPress News' dashboard widget.
@@ -1105,7 +1105,7 @@ function wp_dashboard_primary() {
 			 *
 			 * @param string $link The widget's secondary link URL.
 			 */
-			'link' => apply_filters( 'dashboard_secondary_link', __( 'https://planet.eddcoons_portfolio.org/' ) ),
+			'link' => apply_filters( 'dashboard_secondary_link', __( 'https://planet.wordpress.org/' ) ),
 
 			/**
 			 * Filter the secondary feed URL for the 'WordPress News' dashboard widget.
@@ -1114,7 +1114,7 @@ function wp_dashboard_primary() {
 			 *
 			 * @param string $url The widget's secondary feed URL.
 			 */
-			'url' => apply_filters( 'dashboard_secondary_feed', __( 'https://planet.eddcoons_portfolio.org/feed/' ) ),
+			'url' => apply_filters( 'dashboard_secondary_feed', __( 'https://planet.wordpress.org/feed/' ) ),
 
 			/**
 			 * Filter the secondary link title for the 'WordPress News' dashboard widget.
@@ -1143,7 +1143,7 @@ function wp_dashboard_primary() {
 		$feeds['plugins'] = array(
 			'link'         => '',
 			'url'          => array(
-				'popular' => 'http://eddcoons_portfolio.org/plugins/rss/browse/popular/',
+				'popular' => 'http://wordpress.org/plugins/rss/browse/popular/',
 			),
 			'title'        => '',
 			'items'        => 1,
@@ -1401,7 +1401,7 @@ function wp_check_browser_version() {
 			'user-agent'	=> 'WordPress/' . $wp_version . '; ' . home_url()
 		);
 
-		$response = wp_remote_post( 'http://api.eddcoons_portfolio.org/core/browse-happy/1.1/', $options );
+		$response = wp_remote_post( 'http://api.wordpress.org/core/browse-happy/1.1/', $options );
 
 		if ( is_wp_error( $response ) || 200 != wp_remote_retrieve_response_code( $response ) )
 			return false;
@@ -1489,7 +1489,7 @@ function wp_welcome_panel() {
 		<?php if ( current_user_can( 'manage_options' ) ) : ?>
 			<li><?php printf( '<a href="%s" class="welcome-icon welcome-comments">' . __( 'Turn comments on or off' ) . '</a>', admin_url( 'options-discussion.php' ) ); ?></li>
 		<?php endif; ?>
-			<li><?php printf( '<a href="%s" class="welcome-icon welcome-learn-more">' . __( 'Learn more about getting started' ) . '</a>', __( 'https://codex.eddcoons_portfolio.org/First_Steps_With_WordPress' ) ); ?></li>
+			<li><?php printf( '<a href="%s" class="welcome-icon welcome-learn-more">' . __( 'Learn more about getting started' ) . '</a>', __( 'https://codex.wordpress.org/First_Steps_With_WordPress' ) ); ?></li>
 		</ul>
 	</div>
 	</div>

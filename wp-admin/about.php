@@ -42,14 +42,14 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 			<h3><?php _e( 'Maintenance and Security Releases' ); ?></h3>
 			<p><?php printf( _n( '<strong>Version %s</strong> addressed some security issues and fixed %2$s bug.',
 				'<strong>Version %s</strong> addressed some security issues and fixed %2$s bugs.', 17 ), '4.5.3', number_format_i18n( 17 ) ); ?>
-				<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.eddcoons_portfolio.org/Version_4.5.3' ); ?>
+				<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.5.3' ); ?>
 			</p>
 			<p><?php printf( __( '<strong>Version %s</strong> addressed some security issues.' ), '4.5.2' ); ?>
-				<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.eddcoons_portfolio.org/Version_4.5.2' ); ?>
+				<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.5.2' ); ?>
 			</p>
 			<p><?php printf( _n( '<strong>Version %1$s</strong> addressed %2$s bug.',
 				'<strong>Version %1$s</strong> addressed %2$s bugs.', 12 ), '4.5.1', number_format_i18n( 12 ) ); ?>
-				<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.eddcoons_portfolio.org/Version_4.5.1' ); ?>
+				<?php printf( __( 'For more information, see <a href="%s">the release notes</a>.' ), 'https://codex.wordpress.org/Version_4.5.1' ); ?>
 			</p>
 		</div>
 
@@ -125,7 +125,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 						printf(
 							/* translators: %s: URL to the development post of the new feature */
 							__( 'The customizer now supports a <a href="%s">comprehensive framework</a> for rendering parts of the preview without rewriting your PHP code in JavaScript.' ),
-							'https://make.eddcoons_portfolio.org/core/2016/02/16/selective-refresh-in-the-customizer/'
+							'https://make.wordpress.org/core/2016/02/16/selective-refresh-in-the-customizer/'
 						);
 						if ( current_user_can( 'customize' ) && current_user_can( 'edit_theme_options' ) ) {
 							if ( current_theme_supports( 'menus' ) && ! current_theme_supports( 'customize-selective-refresh-widgets' ) ) {
@@ -151,7 +151,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 						printf(
 							/* translators: %s: URL to the development post of the new feature */
 							__( 'Generated images now load up to 50&#37; faster with no noticeable quality loss. <a href="%s">It&#8217;s really cool</a>.' ),
-							'https://make.eddcoons_portfolio.org/core/2016/03/12/performance-improvements-for-images-in-eddcoons_portfolio-4-5/'
+							'https://make.wordpress.org/core/2016/03/12/performance-improvements-for-images-in-wordpress-4-5/'
 						);
 					?></p>
 				</div>
@@ -168,7 +168,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 						printf(
 							/* translators: %s: wp_add_inline_script() */
 							__( 'Better support has been added for script header/footer dependencies. New %s enables adding extra code to registered scripts.' ),
-							'<code><a href="https://make.eddcoons_portfolio.org/core/2016/03/08/enhanced-script-loader-in-eddcoons_portfolio-4-5/">wp_add_inline_script()</a></code>'
+							'<code><a href="https://make.wordpress.org/core/2016/03/08/enhanced-script-loader-in-wordpress-4-5/">wp_add_inline_script()</a></code>'
 						);
 					?></p>
 				</div>
@@ -178,7 +178,7 @@ include( ABSPATH . 'wp-admin/admin-header.php' );
 						printf(
 							/* translators: %s: URL to the development post of the new feature */
 							__( 'Embed templates have been split into parts and can be <a href="%s">directly overridden by themes</a> via the template hierarchy.' ),
-							'https://make.eddcoons_portfolio.org/core/2016/03/11/embeds-changes-in-eddcoons_portfolio-4-5/'
+							'https://make.wordpress.org/core/2016/03/11/embeds-changes-in-wordpress-4-5/'
 						);
 					?></p>
 				</div>

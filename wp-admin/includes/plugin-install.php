@@ -79,7 +79,7 @@
  *         @type bool $downloaded        Whether to return the download count. Default true.
  *         @type bool $downloadlink      Whether to return the download link for the package. Default true.
  *         @type bool $last_updated      Whether to return the date of the last update. Default true.
- *         @type bool $added             Whether to return the date when the plugin was added to the eddcoons_portfolio.org
+ *         @type bool $added             Whether to return the date when the plugin was added to the wordpress.org
  *                                       repository. Default true.
  *         @type bool $tags              Whether to return the assigned tags. Default true.
  *         @type bool $compatibility     Whether to return the WordPress compatibility list. Default true.
@@ -141,7 +141,7 @@ function plugins_api( $action, $args = array() ) {
 	$res = apply_filters( 'plugins_api', false, $action, $args );
 
 	if ( false === $res ) {
-		$url = $http_url = 'http://api.eddcoons_portfolio.org/plugins/info/1.0/';
+		$url = $http_url = 'http://api.wordpress.org/plugins/info/1.0/';
 		if ( $ssl = wp_http_supports( array( 'ssl' ) ) )
 			$url = set_url_scheme( $url, 'https' );
 
@@ -155,16 +155,16 @@ function plugins_api( $action, $args = array() ) {
 		$request = wp_remote_post( $url, $http_args );
 
 		if ( $ssl && is_wp_error( $request ) ) {
-			trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
+			trigger_error( __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ) . ' ' . __( '(WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.)' ), headers_sent() || WP_DEBUG ? E_USER_WARNING : E_USER_NOTICE );
 			$request = wp_remote_post( $http_url, $http_args );
 		}
 
 		if ( is_wp_error($request) ) {
-			$res = new WP_Error('plugins_api_failed', __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ), $request->get_error_message() );
+			$res = new WP_Error('plugins_api_failed', __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ), $request->get_error_message() );
 		} else {
 			$res = maybe_unserialize( wp_remote_retrieve_body( $request ) );
 			if ( ! is_object( $res ) && ! is_array( $res ) )
-				$res = new WP_Error('plugins_api_failed', __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://eddcoons_portfolio.org/support/">support forums</a>.' ), wp_remote_retrieve_body( $request ) );
+				$res = new WP_Error('plugins_api_failed', __( 'An unexpected error occurred. Something may be wrong with WordPress.org or this server&#8217;s configuration. If you continue to have problems, please try the <a href="https://wordpress.org/support/">support forums</a>.' ), wp_remote_retrieve_body( $request ) );
 		}
 	} elseif ( !is_wp_error($res) ) {
 		$res->external = true;
@@ -210,7 +210,7 @@ function install_popular_tags( $args = array() ) {
  */
 function install_dashboard() {
 	?>
-	<p><?php printf( __( 'Plugins extend and expand the functionality of WordPress. You may automatically install plugins from the <a href="%1$s">WordPress Plugin Directory</a> or upload a plugin in .zip format via <a href="%2$s">this page</a>.' ), 'https://eddcoons_portfolio.org/plugins/', self_admin_url( 'plugin-install.php?tab=upload' ) ); ?></p>
+	<p><?php printf( __( 'Plugins extend and expand the functionality of WordPress. You may automatically install plugins from the <a href="%1$s">WordPress Plugin Directory</a> or upload a plugin in .zip format via <a href="%2$s">this page</a>.' ), 'https://wordpress.org/plugins/', self_admin_url( 'plugin-install.php?tab=upload' ) ); ?></p>
 
 	<?php display_plugins_table(); ?>
 
@@ -338,7 +338,7 @@ function display_plugins_table() {
 		case 'install_plugins_beta' :
 			printf(
 				'<p>' . __( 'You are using a development version of WordPress. These feature plugins are also under development. <a href="%s">Learn more</a>.' ) . '</p>',
-				'https://make.eddcoons_portfolio.org/core/handbook/about/release-cycle/features-as-plugins/'
+				'https://make.wordpress.org/core/handbook/about/release-cycle/features-as-plugins/'
 			);
 			break;
 	}
@@ -614,9 +614,9 @@ function install_plugin_information() {
 					}
 					$contrib_username = sanitize_user( $contrib_username );
 					if ( empty( $contrib_profile ) ) {
-						echo "<li><img src='https://eddcoons_portfolio.org/grav-redirect.php?user={$contrib_username}&amp;s=36' width='18' height='18' alt='' />{$contrib_username}</li>";
+						echo "<li><img src='https://wordpress.org/grav-redirect.php?user={$contrib_username}&amp;s=36' width='18' height='18' alt='' />{$contrib_username}</li>";
 					} else {
-						echo "<li><a href='{$contrib_profile}' target='_blank'><img src='https://eddcoons_portfolio.org/grav-redirect.php?user={$contrib_username}&amp;s=36' width='18' height='18' alt='' />{$contrib_username}</a></li>";
+						echo "<li><a href='{$contrib_profile}' target='_blank'><img src='https://wordpress.org/grav-redirect.php?user={$contrib_username}&amp;s=36' width='18' height='18' alt='' />{$contrib_username}</a></li>";
 					}
 				}
 				?>
@@ -635,7 +635,7 @@ function install_plugin_information() {
 		}
 
 		foreach ( (array) $api->sections as $section_name => $content ) {
-			$content = links_add_base_url( $content, 'https://eddcoons_portfolio.org/plugins/' . $api->slug . '/' );
+			$content = links_add_base_url( $content, 'https://wordpress.org/plugins/' . $api->slug . '/' );
 			$content = links_add_target( $content, '_blank' );
 
 			$san_section = esc_attr( $section_name );

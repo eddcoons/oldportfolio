@@ -100,7 +100,7 @@ class WPCF7_ContactFormTemplate {
 			return $admin_email;
 		}
 
-		return 'eddcoons_portfolio@' . $sitename;
+		return 'wordpress@' . $sitename;
 	}
 
 	public static function messages() {

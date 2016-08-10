@@ -1883,7 +1883,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:1420
 msgid ""
-"There are several ways to add your slider to your eddcoons_portfolio post / page / "
+"There are several ways to add your slider to your wordpress post / page / "
 "etc."
 msgstr ""
 
@@ -3457,7 +3457,7 @@ msgstr ""
 
 #: ../admin/views/templates/slider-main-options.php:3658
 msgid ""
-"Activate a protection against eddcoons_portfolio output filters that adds html blocks "
+"Activate a protection against wordpress output filters that adds html blocks "
 "to the shortcode output like P and BR."
 msgstr ""
 
@@ -5599,7 +5599,7 @@ msgstr "Löschen"
 
 #: ../admin/views/slide-overview.php:173
 msgid ""
-"Warning! Removing this entry will cause the original eddcoons_portfolio post to be "
+"Warning! Removing this entry will cause the original wordpress post to be "
 "deleted."
 msgstr ""
 "Warnung! Die Entfernung dieses Beitrages löscht den Originalen Beitrag von "

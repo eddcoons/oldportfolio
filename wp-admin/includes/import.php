@@ -129,7 +129,7 @@ function wp_get_popular_importers() {
 	$popular_importers = get_site_transient( 'popular_importers_' . $locale );
 
 	if ( ! $popular_importers ) {
-		$url = add_query_arg( 'locale', get_locale(), 'http://api.eddcoons_portfolio.org/core/importers/1.1/' );
+		$url = add_query_arg( 'locale', get_locale(), 'http://api.wordpress.org/core/importers/1.1/' );
 		$options = array( 'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url() );
 		$response = wp_remote_get( $url, $options );
 		$popular_importers = json_decode( wp_remote_retrieve_body( $response ), true );
@@ -197,11 +197,11 @@ function wp_get_popular_importers() {
 			'plugin-slug' => 'tumblr-importer',
 			'importer-id' => 'tumblr',
 		),
-		'eddcoons_portfolio' => array(
+		'wordpress' => array(
 			'name' => 'WordPress',
 			'description' => __( 'Install the WordPress importer to import posts, pages, comments, custom fields, categories, and tags from a WordPress export file.' ),
-			'plugin-slug' => 'eddcoons_portfolio-importer',
-			'importer-id' => 'eddcoons_portfolio',
+			'plugin-slug' => 'wordpress-importer',
+			'importer-id' => 'wordpress',
 		),
 	);
 }

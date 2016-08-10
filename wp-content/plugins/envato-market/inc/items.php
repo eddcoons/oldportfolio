@@ -210,7 +210,7 @@ if ( ! class_exists( 'Envato_Market_Items' ) ) :
 		public function update_check( $request, $url ) {
 
 			// Theme update request.
-			if ( false !== strpos( $url, '//api.eddcoons_portfolio.org/themes/update-check/1.1/' ) ) {
+			if ( false !== strpos( $url, '//api.wordpress.org/themes/update-check/1.1/' ) ) {
 
 				/**
 				 * Excluded theme slugs that should never ping the WordPress API.
@@ -232,7 +232,7 @@ if ( ! class_exists( 'Envato_Market_Items' ) ) :
 			}
 
 			// Plugin update request.
-			if ( false !== strpos( $url, '//api.eddcoons_portfolio.org/plugins/update-check/1.1/' ) ) {
+			if ( false !== strpos( $url, '//api.wordpress.org/plugins/update-check/1.1/' ) ) {
 
 				/**
 				 * Excluded theme slugs that should never ping the WordPress API.
